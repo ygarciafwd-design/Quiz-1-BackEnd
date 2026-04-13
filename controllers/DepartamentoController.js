@@ -2,7 +2,7 @@ const Departamento = require("../models/Departamento");
 
 class DepartamentoController {
 
-  async getAll(req, res) {
+  static async getAll(req, res) {
     try {
       const departamentos = await Departamento.getAll();
       return res.status(200).json({

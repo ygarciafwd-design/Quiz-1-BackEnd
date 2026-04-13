@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
+
 const empleadoRoutes = require("./routes/EmpleadoRoutes");
 const proyectoRoutes = require("./routes/ProyectoRoutes");
 const clienteRoutes = require("./routes/ClienteRoutes");

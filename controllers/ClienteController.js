@@ -1,12 +1,9 @@
 const Cliente = require("../models/Cliente");
 
-/**
- * Controlador para operaciones CRUD de clientes.
- * Implementa los métodos estáticos que serán llamados por las rutas.
- */
+
 class ClienteController {
 
-  static async getAll(req, res) {
+  async getAll(req, res) {
     try {
       const clientes = await Cliente.getAll();
       return res.status(200).json({
@@ -23,7 +20,7 @@ class ClienteController {
     }
   }
 
-  static async getById(req, res) {
+  async getById(req, res) {
     try {
       const { id } = req.params;
       if (isNaN(id)) {
@@ -48,7 +45,7 @@ class ClienteController {
     }
   }
 
-  static async create(req, res) {
+  async create(req, res) {
     try {
       const { nombre, correo, telefono, empresa } = req.body;
 
@@ -75,7 +72,7 @@ class ClienteController {
     }
   }
 
-  static async update(req, res) {
+  async update(req, res) {
     try {
       const { id } = req.params;
       if (isNaN(id)) {
@@ -103,7 +100,7 @@ class ClienteController {
     }
   }
 
-  static async delete(req, res) {
+  async delete(req, res) {
     try {
       const { id } = req.params;
       if (isNaN(id)) {

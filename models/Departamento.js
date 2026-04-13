@@ -32,30 +32,6 @@ class Departamento {
     return `Departamento [${this._id}]: ${this._nombre}`;
   }
 
-  static async getAll() {
-
-    throw new Error("Método pendiente de implementación con base de datos.");
-  }
-
-  static async getById(id) {
-
-    throw new Error("Método pendiente de implementación con base de datos.");
-  }
-
-  static async create(datos) {
-
-    throw new Error("Método pendiente de implementación con base de datos.");
-  }
-
-  static async update(id, datos) {
-
-    throw new Error("Método pendiente de implementación con base de datos.");
-  }
-
-  static async delete(id) {
-
-    throw new Error("Método pendiente de implementación con base de datos.");
-  }
 }
 
 module.exports = Departamento;
